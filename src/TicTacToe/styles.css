@@ -1,0 +1,40 @@
+.board {
+    display: table;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    border: thin solid gray;
+    height: 100px;
+    width: 100px;
+    display: table-cell;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-family: arial, sans;
+    user-select: none;
+    cursor: pointer;
+}
+
+.refresh {
+    border: none;
+    font-size: 20px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.actionbar {
+    font-size: 20px;
+    font-family: arial, sans;
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
