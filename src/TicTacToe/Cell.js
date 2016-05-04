@@ -1,12 +1,17 @@
 import React from 'react'
+import classNames from 'classnames'
 
 import styles from './styles.css'
 
 const Cell = ({player, cell, onClick}) => (
   <div
-    className={styles.cell}
+    className={classNames(styles.cell, {
+      [styles.used]: player
+    }) }
     onClick={() => {
-      onClick(cell)
+      if (!player) {
+        onClick(cell)
+      }
     }}
     data-test-id={`x:${cell.x},y:${cell.y}`}
   >

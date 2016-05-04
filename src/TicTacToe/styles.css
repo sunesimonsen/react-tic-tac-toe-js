@@ -21,6 +21,10 @@
     cursor: pointer;
 }
 
+.used {
+    cursor: default;
+}
+
 .refresh {
     border: none;
     font-size: 20px;
